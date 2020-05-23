@@ -1,0 +1,40 @@
+{
+  "name": "azure-app-service",
+  "version": "0.1.0",
+  "description": "graphql app service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antempus/azure-app-service"
+  },
+  "author": "Robert N. Steele",
+  "scripts": {
+    "start": "node -r dotenv/config dist/server.js",
+    "serve": "npm run build-ts && npm start",
+    "watch-node": "nodemon dist/server.js",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^3.6.3",
+    "@types/errorhandler": "^1.5.0",
+    "apollo-server": "^2.13.1",
+    "apollo-server-express": "^2.13.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/eslint": "^6.1.1",
+    "@types/node": "^12.7.8",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  }
+}
