@@ -1,5 +1,4 @@
 import express from "express";
-import bodyParser from "body-parser";
 import { makeExecutableSchema, ApolloServer } from "apollo-server-express";
 import typeDefs from "./lib/typeDefs";
 import resolvers from "./lib/resolvers";
