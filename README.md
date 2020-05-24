@@ -6,7 +6,7 @@ GraphQL App Service backed by CosmosDB
 
 ### Docker
 
-- `docker build --tag <DOCKER_ID>/<REPO_NAME>:<TAG>
+- `docker build --tag <DOCKER_ID>/<REPO_NAME>:<TAG>`
 - `docker run -e CosmosKey="COSMOS_CONNECTION_STRING" -p 8080:80 -it <DOCKER_ID>/<REPO_NAME>:<TAG>`
 - navigate to `http://localhost:8080/graphql` for GraphQL Playground
 

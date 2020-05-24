@@ -9,10 +9,10 @@
   "author": "Robert N. Steele",
   "scripts": {
     "start": "node -r dotenv/config dist/server.js",
-    "serve": "npm run build-ts && npm start",
+    "serve": "npm run build && npm start",
     "watch-node": "nodemon dist/server.js",
-    "build-ts": "tsc",
-    "watch-ts": "tsc -w",
+    "build": "tsc",
+    "watch": "tsc -w",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
   },
   "dependencies": {
