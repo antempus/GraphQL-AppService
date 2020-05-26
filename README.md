@@ -1,3 +1,5 @@
+![Docker Image CI](https://github.com/antempus/GraphQL-AppService/workflows/Docker%20Image%20CI/badge.svg?branch=master)
+
 # GraphQL-AppService
 
 GraphQL App Service backed by CosmosDB
